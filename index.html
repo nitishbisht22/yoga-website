@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,200&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .top {
+        color: black;
+        cursor: pointer;
+      }
+      .top:hover {
+        color: rgb(114, 200, 200);
+      }
+      p {
+        text-align: center;
+        font-family: Roboto, sans;
+        font-size: 40px;
+        font-weight: normal;
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+      .image1 {
+        width: 1400px;
+        height: 600px;
+        object-fit: cover;
+        object-position: bottom;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        /* margin-bottom: 25px; */
+        filter: brightness(60%);
+      }
+      .main {
+        text-align: center;
+      }
+      .main-template {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        font-family: Roboto, sans;
+        font-size: 17px;
+      }
+      .one {
+        padding-left: 350px;
+      }
+      .two {
+        padding-left: 50px;
+      }
+      .three {
+        padding-left: 50px;
+      }
+      .four {
+        padding-left: 50px;
+      }
+      .five {
+        padding-left: 50px;
+      }
+      .six {
+        padding-left: 50px;
+      }
+      .centered-text-above-image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .centered {
+        /* position: absolute;
+        bottom: 2850px;
+        left: 425px; */
+        font-size: 50px;
+        font-family: Roboto, sans;
+      }
+      .centered1 {
+        /* position: absolute;
+        bottom: 2800px;
+        left: 525px; */
+        font-size: 17px;
+        margin-top: -20px;
+        font-family: Roboto, sans;
+        color: rgb(208, 200, 200);
+      }
+      .container {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+      .image2 {
+        height: 250px;
+        width: 250px;
+        object-fit: cover;
+        object-position: bottom;
+        border-radius: 124.5px;
+      }
+      .image3 {
+        height: 250px;
+        width: 250px;
+        object-fit: cover;
+        object-position: bottom;
+        border-radius: 124.5px;
+      }
+      .image4 {
+        height: 250px;
+        width: 250px;
+        object-fit: cover;
+        object-position: bottom;
+        border-radius: 124.5px;
+      }
+      .image5 {
+        height: 250px;
+        width: 250px;
+        object-fit: cover;
+        object-position: bottom;
+        border-radius: 124.5px;
+      }
+      .image {
+        height: 220px;
+        width: 220px;
+        border-radius: 120px;
+        object-fit: cover;
+        object-position: bottom;
+        cursor: pointer;
+      }
+      .name1 {
+        color: rgb(114, 200, 200);
+        font-size: 30px;
+      }
+      .name2 {
+        color: rgb(108, 107, 107);
+        font-size: 17px;
+      }
+      .container3 {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgba(234, 231, 231, 0.414);
+        padding-top: 80px;
+        margin-bottom: 40px;
+        margin-top: 0px;
+        padding-bottom: 60px;
+      }
+      .image:hover {
+        opacity: 0.7;
+      }
+      .button {
+        background-color: white;
+        border: none;
+        height: 40px;
+        width: 150px;
+        font-size: 15px;
+        cursor: pointer;
+      }
+      .button:hover {
+        background-color: rgb(139, 246, 238);
+      }
+      .text2 {
+        text-align: center;
+        font-family: Roboto, sans;
+        font-size: 45px;
+        color: rgb(114, 200, 200);
+        cursor: pointer;
+      }
+      .images {
+        height: 242.33px;
+        width: 350px;
+        object-fit: cover;
+        object-position: center;
+        margin-bottom: 15px;
+        /* filter: brightness(80%); */
+        cursor: pointer;
+      }
+      .name3 {
+        color: rgb(114, 200, 200);
+        font-size: 30px;
+        font-family: Roboto, sans;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        cursor: pointer;
+      }
+      .name3:hover {
+        color: rgb(114, 200, 200);
+      }
+      .name4 {
+        color: black;
+        font-size: 15px;
+        font-family: Roboto, sans;
+        margin-top: 15px;
+      }
+      .container4 {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .container5 {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .time-table {
+        color: rgb(114, 200, 200);
+        font-size: 45px;
+        cursor: pointer;
+      }
+
+      table,
+      td {
+        color: black;
+        font-size: 20px;
+        border: 0.5px solid grey;
+        border-collapse: collapse;
+      }
+      td {
+        padding-right: 21px;
+        padding-left: 21px;
+      }
+      table {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .exp-card {
+        display: flex;
+        margin-left: 64px;
+        gap: 48px;
+        /* text-align: left; */
+      }
+      .exp-card .left {
+        display: flex;
+        flex-direction: column;
+      }
+      .span {
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+      .time2 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .new-image {
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        object-fit: cover;
+      }
+      .text4 {
+        font-size: 23px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        color: rgb(114, 200, 200);
+      }
+      .text5 {
+        font-size: 17px;
+        margin-top: 7px;
+        margin-bottom: 8px;
+      }
+      .time2 {
+        background-color: rgb(114, 200, 200);
+        color: white;
+      }
+      .container-7 {
+        background-color: rgba(234, 231, 231, 0.414);
+        padding-top: 10px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        padding-bottom: 80px;
+      }
+      .experience {
+        text-align: center;
+        font-family: Roboto, sans;
+        font-size: 45px;
+        color: rgb(114, 200, 200);
+        padding-bottom: 20px;
+        padding-top: 20px;
+      }
+      .big-txt {
+        font-family: Roboto, sans;
+        font-size: 35px;
+        color: rgb(114, 200, 200);
+        margin-top: 0px;
+        margin-bottom: 15px;
+        text-align: right;
+        white-space: nowrap;
+      }
+      .small-text {
+        font-family: Roboto, sans;
+        font-size: 15px;
+        color: black;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        text-align: right;
+      }
+      .ex-container {
+        display: inline-block;
+        padding-right: 800px;
+        vertical-align: top;
+        width: 400px;
+      }
+      /* .exp{
+        height:700px;
+        width:500px;
+        align-items:center;
+        margin-left:80px;
+  
+      } */
+    </style>
+  </head>
+  <body>
+    <p class="top">Meditative</p>
+    <div>
+      <ul class="main-template">
+        <div class="one">
+          <a style="text-decoration: none; color: black" href="#">HOME</a>
+        </div>
+        <div class="two">
+          <a style="text-decoration: none; color: black" href="#">TRAINER</a>
+        </div>
+        <div class="three">
+          <a style="text-decoration: none; color: black" href="#">CLASSES</a>
+        </div>
+        <div class="four">
+          <a style="text-decoration: none; color: black" href="#">SCHEDULE</a>
+        </div>
+        <div class="five">
+          <a style="text-decoration: none; color: black" href="/register.html"
+            >REGISTRATION</a
+          >
+        </div>
+        <div class="six">
+          <a style="text-decoration: none; color: black" href="#">CONTACT</a>
+        </div>
+      </ul>
+    </div>
+    <div class="container">
+      <img class="image1" src="main 2.jpg" />
+      <div class="centered-text-above-image">
+        <p class="centered">Discover Your Inner Sanctuary</p>
+        <p class="centered1">
+          Everyday We Bring Hope And Smile To People We Serve
+        </p>
+      </div>
+    </div>
+
+    <br />
+    <div class="container3">
+      <div class="main">
+        <img class="image" src="poweryoga.jpg"/ >
+        <p class="name1">Power Yoga</p>
+        <p class="name2">
+          Far far away, behind the word mountains, <br />
+          far from the countries Vokalia and <br />
+          Consonantia, there live the blind texts
+        </p>
+        <button class="button">Learn More</button>
+      </div>
+      <div class="main">
+        <img class="image" src="community.jpg"/ >
+        <p class="name1">Community Yoga</p>
+        <p class="name2">
+          Far far away, behind the word mountains, <br />
+          far from the countries Vokalia and <br />
+          Consonantia, there live the blind texts
+        </p>
+        <button class="button">Learn More</button>
+      </div>
+      <div class="main">
+        <img class="image" src="foundation.jpg"/ >
+        <p class="name1">Foundation Yoga</p>
+        <p class="name2">
+          Far far away, behind the word mountains, <br />
+          far from the countries Vokalia and <br />
+          Consonantia, there live the blind texts
+        </p>
+        <button class="button">Learn More</button>
+      </div>
+      <div class="main">
+        <img class="image" src="parental.jpg"/ >
+        <p class="name1">Parental Yoga</p>
+        <p class="name2">
+          Far far away, behind the word mountains, <br />
+          far from the countries Vokalia and <br />
+          Consonantia, there live the blind texts
+        </p>
+        <button class="button">Learn More</button>
+      </div>
+    </div>
+    
+    </div>
+
+    <p class="text2">Our Classes</p>
+    <div class="container4">
+      <div>
+        <img class="images" src="mon7.jpg" />
+        <p class="name3">Private and Group Lessons</p>
+        <p class="name4">Sept. 30, 2019 - 01:00pm - 03:00pm</p>
+      </div>
+      <div>
+        <img class="images" src="mon2.jpg" />
+        <p class="name3">Yoga for Pregnant</p>
+        <p class="name4">Sept. 30, 2019 - 01:00pm - 03:00pm</p>
+      </div>
+      <div>
+        <img class="images" src="mon3.jpg" />
+        <p class="name3">Yoga for Beginners</p>
+        <p class="name4">Sept. 30, 2019 - 01:00pm - 03:00pm</p>
+      </div>
+    </div>
+    <div class="container5">
+      <div>
+        <img class="images" src="mon4.jpg" />
+        <p class="name3">Yoga Core</p>
+        <p class="name4">Sept. 30, 2019 - 01:00pm - 03:00pm</p>
+      </div>
+      <div>
+        <img class="images" src="mon5.jpg" />
+        <p class="name3">Yoga Barre</p>
+        <p class="name4">Sept. 30, 2019 - 01:00pm - 03:00pm</p>
+      </div>
+      <div>
+        <img class="images" src="mon6.jpg" />
+        <p class="name3">Yoga Restore</p>
+        <p class="name4">Sept. 30, 2019 - 01:00pm - 03:00pm</p>
+      </div>
+    </div>
+    <div class="container-7">
+      <p class="time-table">Class Time Table</p>
+      <table>
+        <tr>
+          <td class="time2">Monday</td>
+          <td class="time2">Tuesday</td>
+          <td class="time2">Wednesday</td>
+          <td class="time2">Thursday</td>
+          <td class="time2">Friday</td>
+          <td class="time2">Saturday</td>
+          <td class="time2">Sunday</td>
+        </tr>
+        <tr>
+          <td class="span">x</td>
+          <td class="span">
+            <img class="new-image" src="yog1.jpeg" />
+            <p class="text4">Yoga Training</p>
+            <p class="text5">7am-6pm</p>
+          </td>
+          <td class="span">x</td>
+          <td class="span">
+            <img class="new-image" src="yoga2.jpeg" />
+            <p class="text4">Yoga Training</p>
+            <p class="text5">7am-6pm</p>
+          </td>
+          <td class="span">x</td>
+          <td class="span">
+            <img class="new-image" src="yog3.jpeg" />
+            <p class="text4">Yoga Training</p>
+            <p class="text5">7am-6pm</p>
+          </td>
+          <td class="span">x</td>
+        </tr>
+        <tr>
+          <td class="span">
+            <img class="new-image" src="yog4.jpeg" />
+            <p class="text4">Yoga Training</p>
+            <p class="text5">7am-6pm</p>
+          </td>
+          <td class="span">x</td>
+          <td class="span">
+            <img class="new-image" src="yog5.jpeg" />
+            <p class="text4">Yoga Training</p>
+            <p class="text5">7am-6pm</p>
+          </td>
+          <td class="span">x</td>
+          <td class="span">
+            <img class="new-image" src="yog6.jpeg" />
+            <p class="text4">Yoga Training</p>
+            <p class="text5">7am-6pm</p>
+          </td>
+          <td class="span">x</td>
+          <td class="span">
+            <img class="new-image" src="yog7.jpeg" />
+            <p class="text4">Yoga Training</p>
+            <p class="text5">7am-6pm</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="span">x</td>
+          <td class="span">
+            <img class="new-image" src="yog1.jpeg" />
+            <p class="text4">Yoga Training</p>
+            <p class="text5">7am-6pm</p>
+          </td>
+          <td class="span">x</td>
+          <td class="span">
+            <img class="new-image" src="yoga2.jpeg" />
+            <p class="text4">Yoga Training</p>
+            <p class="text5">7am-6pm</p>
+          </td>
+          <td class="span">x</td>
+          <td class="span">
+            <img class="new-image" src="yog3.jpeg" />
+            <p class="text4">Yoga Training</p>
+            <p class="text5">7am-6pm</p>
+          </td>
+          <td class="span">x</td>
+        </tr>
+        <tr>
+          <td class="span">
+            <img class="new-image" src="yog4.jpeg" />
+            <p class="text4">Yoga Training</p>
+            <p class="text5">7am-6pm</p>
+          </td>
+          <td class="span">x</td>
+          <td class="span">
+            <img class="new-image" src="yog5.jpeg" />
+            <p class="text4">Yoga Training</p>
+            <p class="text5">7am-6pm</p>
+          </td>
+          <td class="span">x</td>
+          <td class="span">
+            <img class="new-image" src="yog6.jpeg" />
+            <p class="text4">Yoga Training</p>
+            <p class="text5">7am-6pm</p>
+          </td>
+          <td class="span">x</td>
+          <td class="span">
+            <img class="new-image" src="yog7.jpeg" />
+            <p class="text4">Yoga Training</p>
+            <p class="text5">7am-6pm</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
